@@ -5,7 +5,7 @@ import profileImage from 'public/profile.png';
 export default function AboutPage() {
   return (
     <section className="flex gap-10 items-center bg-grey p-9 rounded-3xl">
-      <div className="w-[160px] h-[160px] rounded-full overflow-hidden border-4 border-[#FFD3AB]">
+      <div className="w-[160px] h-[160px] rounded-full overflow-hidden border-4 border-orange">
         <Image src={profileImage} alt="profileImage" priority />
       </div>
       <div className="flex flex-col gap-2">

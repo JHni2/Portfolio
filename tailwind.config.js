@@ -5,6 +5,7 @@ module.exports = {
     colors: {
       grey: '#F9F9F9',
       orange: '#FFBF85',
+      pointGrey: '#8b8b8b',
     },
     extend: {
       backgroundImage: {

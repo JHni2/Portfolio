@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 import HomePage from './components/Home';
 import AboutPage from './components/About';
+import SkillSet from './components/SkillSet';
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
         <HomePage />
         <Nav />
         <AboutPage />
+        <SkillSet />
       </div>
     </div>
   );
