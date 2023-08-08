@@ -2,8 +2,9 @@ import Header from './components/Header';
 import Nav from './components/Nav';
 import HomePage from './components/Home';
 import AboutPage from './components/About';
-import SkillSet from './components/SkillSet';
-import Education from './components/Education';
+import EducationPage from './components/Education';
+import SkillSetPage from './components/SkillSet';
+import ProjectPage from './components/Project';
 
 export default function Home() {
   return (
@@ -13,8 +14,10 @@ export default function Home() {
         <HomePage />
         <Nav />
         <AboutPage />
-        <SkillSet />
-        <Education />
+        <SkillSetPage />
+        <EducationPage />
+        {/* @ts-expect-error Async Server Component */}
+        <ProjectPage />
       </div>
     </div>
   );

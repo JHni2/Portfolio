@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import educationImg from 'public/education.png';
+import educationImg from 'public/images/education.png';
 
-export default function Education() {
+export default function EducationPage() {
   return (
     <section className="flex flex-col gap-6">
       <h2 className="text-4xl font-bold my-4 text-center">Education</h2>

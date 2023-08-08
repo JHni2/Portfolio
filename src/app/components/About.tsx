@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import profileImage from 'public/profile.png';
+import profileImage from 'public/images/profile.png';
 
 export default function AboutPage() {
   return (

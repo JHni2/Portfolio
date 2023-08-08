@@ -1,0 +1,19 @@
+import { Project } from '@/service/projects';
+import Image from 'next/image';
+
+type Props = { post: Project };
+
+export default function ProjectCard({ post: { title, description, date, path } }: Props) {
+  return (
+    <section className="flex gap-3 p-10 shadow-lg rounded-3xl">
+      <div className="flex flex-col justify-evenly">
+        <h3 className="text-2xl font-bold truncate w-full">{title}</h3>
+        <p className="text-lg font-semibold">{description}</p>
+        <time>{date.toString()}</time>
+      </div>
+      <div className="relative w-[400px] h-[200px] overflow-hidden">
+        <Image src={`/images/${path}.png`} alt={title} fill />
+      </div>
+    </section>
+  );
+}
