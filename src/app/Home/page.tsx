@@ -1,4 +1,4 @@
-import ArrowDown from '../components/ArrowDown';
+import ArrowDown from '../components/ui/icons/ArrowDownIcon';
 
 export default function HomePage() {
   return (
