@@ -10,8 +10,11 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className={outfit.className}>{children}</body>
+    <html lang="en" className={outfit.className}>
+      <body className="w-full max-w-screen-xl overflow-auto mx-auto">
+        {children}
+        <div id="portal" />
+      </body>
     </html>
   );
 }
