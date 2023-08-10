@@ -1,10 +1,10 @@
 import Header from './components/Header';
 import Nav from './components/Nav';
 import HomePage from './components/Home';
-import AboutPage from './components/About';
 import EducationPage from './components/Education';
 import SkillSetPage from './components/SkillSet';
 import ProjectPage from './components/Project';
+import ProfilePage from './components/ProfilePage';
 
 export default function Home() {
   return (
@@ -13,11 +13,12 @@ export default function Home() {
         <Header />
         <HomePage />
         <Nav />
-        <AboutPage />
+        <ProfilePage content="About" />
         <SkillSetPage />
         <EducationPage />
         {/* @ts-expect-error Async Server Component */}
         <ProjectPage />
+        <ProfilePage content="Contact" />
       </div>
     </div>
   );
