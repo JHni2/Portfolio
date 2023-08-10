@@ -14,7 +14,7 @@ export const getAllProjects = cache(() => {
   return readFile(filePath, 'utf-8').then<Project[]>(JSON.parse);
 });
 
-export async function getPostData(fileName: string): Promise<Project & { content: string }> {
+export async function getProjectData(fileName: string): Promise<Project & { content: string }> {
   const filePath = path.join(process.cwd(), 'data', 'projects', `${fileName}.md`);
   const projects = await getAllProjects();
   const project = projects.find((project) => project.path === fileName);
