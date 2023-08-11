@@ -1,5 +1,6 @@
 import './globals.css';
 import { Outfit } from 'next/font/google';
+import SWRConfigContext from '@/context/SWRConfigContext';
 
 const outfit = Outfit({ subsets: ['latin'] });
 
@@ -12,7 +13,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={outfit.className}>
       <body className="w-full max-w-screen-xl overflow-auto mx-auto">
-        {children}
+        <main>
+          <SWRConfigContext>{children}</SWRConfigContext>
+        </main>
         <div id="portal" />
       </body>
     </html>

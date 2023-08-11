@@ -1,5 +1,9 @@
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
-export default function ArrowDownIcon() {
-  return <MdKeyboardArrowDown size={50} className="cursor-pointer" />;
+type Props = {
+  size?: number;
+};
+
+export default function ArrowDownIcon({ size = 50 }: Props) {
+  return <MdKeyboardArrowDown size={size} className="cursor-pointer" />;
 }
