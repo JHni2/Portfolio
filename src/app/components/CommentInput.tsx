@@ -39,7 +39,7 @@ export default function CommentInput() {
 
   return (
     <section className="flex gap-4">
-      <div className="relative flex justify-center items-center bg-grey rounded-full w-16 h-16 shadow-md">
+      <div className="relative flex justify-center items-center bg-grey rounded-full min-w-[60px] min-h-[60px] shadow-md">
         <p className="absolute text-2xl cursor-pointer" onClick={() => setOpenModal(!openModal)}>
           {emoji}
         </p>
