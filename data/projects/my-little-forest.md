@@ -27,7 +27,7 @@ https://youtu.be/C5DPI5JN3uM
 ## Project
 
 ### ⚙ 프로젝트 아키텍쳐
-![bud-success.drawio.png](https://file.notion.so/f/s/befff80f-efe7-4bae-ba7e-ab53c06ff54f/bud-success.drawio.png?id=8e77263e-3c9f-4378-956e-3c22c0360959&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691762400000&signature=K3udt9A21rwbE42SDdmxjfeeWaZIO6SPfZ_CS7Fajts&downloadName=bud-success.drawio.png)
+![image](https://github.com/JHni2/collect-webtoons/assets/105628384/f1883e78-4fcb-4a25-897f-dd1c88d49698)
 
 ### 🛠 기술 스택
 ### Frontend
@@ -83,7 +83,7 @@ https://youtu.be/C5DPI5JN3uM
     - Github
 
 ### 📋 ERD
-![Untitled](https://file.notion.so/f/s/6d5f6911-9ffa-46b0-9f7c-137675259111/Untitled.png?id=4d502ddf-4248-4b83-98f3-83c466092e8a&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691762400000&signature=XJv73DJs5PWl05V9cgifNGHSrnY3KHJpKQ5kHodMN8Q&downloadName=Untitled.png)
+![Untitled](https://github.com/JHni2/collect-webtoons/assets/105628384/4e488f0a-03e0-48db-bcab-e04f6f5da719)
 
 ### 🔗 주요 기능
 
@@ -92,7 +92,7 @@ https://youtu.be/C5DPI5JN3uM
     - 키워드 필터 검색 시 사용자가 선택한 필터를 input창에 입력해주어 사용자 편의성을 높였습니다.
     - 사용자 접근성을 고려해, 음성 검색을 추가하였습니다. 음성 검색 결과를 input창에 입력해주어 사용자 편의성을 높였습니다.
     - 최신순, 인기순, 내림차순, 오름차순으로 정렬이 가능하도록 했습니다.
-    ![Untitled](https://file.notion.so/f/s/9d2ba556-1e8a-4cee-88dd-f2490d525e99/%EA%B2%80%EC%83%89_%EB%B0%8F_%ED%95%84%EB%8D%94_%EA%B8%B0%EB%8A%A5.gif?id=b505abc6-826a-4c08-9888-a09079d0b0dd&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691762400000&signature=nxXVMg07dYGWagneJi0X4uoRbdRiA5E5bwzlx4s81J4&downloadName=%EA%B2%80%EC%83%89+%EB%B0%8F+%ED%95%84%EB%8D%94+%EA%B8%B0%EB%8A%A5.gif)
+    ![ezgif](https://github.com/JHni2/collect-webtoons/assets/105628384/0bc0d641-51f6-45ad-8c44-bfa0926c555c)
 
 1.  **뉴스**
     - useInfinityQuery와 react-intersection-observer를 활용한 무한스크롤
@@ -100,7 +100,7 @@ https://youtu.be/C5DPI5JN3uM
     뷰포트의 크기를 계산해 Yscroll 값을 활용하는 방법도 있었지만, 더 효율적이고 안정적인 방법인 observer를 활용했습니다.
     - 사용자 편의성을 위해 약 한페이지 정도 이상의 스크롤이 발생하면, 정해진 Yscroll값에 따라 scroll to top 버튼이 생기도록 구현했습니다.
     뉴스 상세보기페이지에서도 스크롤 이벤트를 감지해 전체 내용을 볼 수 있도록 디자인했습니다.
-    ![Untitled](https://file.notion.so/f/s/b4612843-13f0-4495-9381-7a8d17d61c84/ezgif.com-optimize_(1).gif?id=a8b4f85b-03b0-40e4-991b-beb5da12899b&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691762400000&signature=WesTpDIu_OXnpXgZvB_gLYclP-MvkpF9Rxug0AzXd8w&downloadName=ezgif.com-optimize+%281%29.gif)
+    ![ezgif](https://github.com/JHni2/collect-webtoons/assets/105628384/8c8a73aa-1cab-44f9-95fa-888642415802)
 
 1.  **커뮤니티**
     - 파일 업로드를 구현할 때, 폼을 통해서 파일을 등록해서 전송합니다.
@@ -112,7 +112,7 @@ https://youtu.be/C5DPI5JN3uM
     - 본인이 작성한 게시글에 달린 댓글은 게시글작성자에 의해 고정(오른쪽으로 밀기) 및 삭제(왼쪽으로 밀기)될 수 있습니다.
     - 질문 작성자가 답변을 채택하면, 채택된 답변은 상단에 고정되며, 더이상의 답변을 추가하거나, 기존에 작성된 질문 및 답변의 수정 및 삭제가 불가능해집니다.
     - 원하는 유저를 팔로우하고, 팔로우한 유저의 게시글 알림등을 받아볼 수 있습니다.
-    ![Untitled](https://file.notion.so/f/s/e2cebb99-de71-4685-ba34-8b223e8cf127/ezgif.com-resize.gif?id=be8594db-7019-442e-8b6c-dcc5e5ef950e&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691762400000&signature=ZRfH84DthOkWsREgyeR6G2nlspfgUhKDH8Q2rA_yivI&downloadName=ezgif.com-resize.gif)
+    ![ezgif](https://github.com/JHni2/collect-webtoons/assets/105628384/27d0c0de-98ed-4baa-8b00-9fc58a30642a)
 
 1.  **실시간 채팅**
     - STOMP JS를 사용해 STOMP 연결, 구독, 발행 로직을 구현하였습니다.
@@ -120,23 +120,24 @@ https://youtu.be/C5DPI5JN3uM
     - 채팅방에서 호스트가 퇴장하면 채팅방 사라지고, 모든 유저들에게는 채팅방이 삭제되었다는 모달 알림창과 함께 채팅방 리스트로 이동됩니다.
     - 채팅방의 호스트는 채팅방의 다른 유저에게 호스트를 위임함으로서 채팅방이 삭제되는 것을 방지할 수 있습니다.
     - 현재 채팅방의 참여중인 유저의 수와 그 리스트가 실시간으로 반영되는 것을 조회할 수 있습니다. 
-    ![Untitled](https://file.notion.so/f/s/2863361b-3818-43b3-82bd-a6f4d820f468/ezgif.com-resize_(1).gif?id=28dcaf7b-6d4d-44b6-9018-78bff6172c7a&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691762400000&signature=jnxMslnuDukKUgRHy3WQnn8bBnlmqn-Q3dMFAaFLG8s&downloadName=ezgif.com-resize+%281%29.gif)
+    ![ezgif](https://github.com/JHni2/collect-webtoons/assets/105628384/6ef4b709-4c41-42a9-82d9-84819cc0ac7d)
 
 1.  **이미지 업로드**
     - 유저가 업로드한 이미지를 미리보기로 확인할 수 있게 코드를 구현하였습니다.
     뷰포트의 크기를 계산해 Yscroll 값을 활용하는 방법도 있었지만, 더 효율적이고 안정적인 방법인 observer를 활용했습니다.
     - 서버의 부하를 최대한 줄이기 위해, Browser Image Compression를 사용해 이미지 용량과 사이즈가 너무 과도하게 크지 않도록 최적화해서 서버로 이미지를 업로드하였습니다. 
-    ![Untitled](https://file.notion.so/f/s/2713891f-bca1-48a2-bb81-2f8b4154a577/ezgif.com-video-to-gif.gif?id=b726dcbd-9dd3-4fd5-8e16-84efcd231d84&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691762400000&signature=Li2CWsUEbnjxseeEuXVqrSpwL4Fz1LMEdzHGkMtTt1s&downloadName=ezgif.com-video-to-gif.gif)
+    ![ezgif](https://github.com/JHni2/collect-webtoons/assets/105628384/f1281692-0eb4-451f-9d33-97b7a88cd72b)
+ac7d)
 
 1.  **실시간 알림**
     - FCM 서버로부터 푸시 알림을 보낼 디바이스들을 식별하기 위한 FCM 토큰을 발급 받습니다.
     - 사용자가 로그인을 시도할 때 사용자에게 알림 권한 허용을 요청한 후, 
     이전에 발급받은 FCM 토큰을 서버로 전달합니다.   
-    ![Untitled](https://file.notion.so/f/s/db13fd63-1ad8-48f6-8ea2-c0be849617dd/ezgif.com-video-to-gif_(2).gif?id=5e3e1ace-a4cf-462d-843e-27bbc8972a50&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691762400000&signature=-zTz4unJz-4preXbfy9ziTRglx3fsDwW5jq9GPae8zU&downloadName=ezgif.com-video-to-gif+%282%29.gif)
+    ![ezgif](https://github.com/JHni2/collect-webtoons/assets/105628384/70745540-4000-4715-87f7-a450d09b6646)
 
 1.  **JWT를 이요한 사용자 인증**
     - JWT는 개인 정보이므로 보안을 위해 recoil atom에 access token을 저장 및 관리했습니다.
     - store는 페이지가 새로고침되면 휘발되는 정보이므로 recoil Effects를 사용해 전역관리가 필요한 사용자의 데이터를 스토리지에 저장해 관리했습니다. 이를 통해 사용자 경험에 영향을 주지 않고 토큰 만료 및 재발급 과정을 처리할 수 있습니다.
     - axios interceptors를 이용해 모든 API 요청으로부터 토큰의 만료시간의 경과 여부를 검사하고, 만료시간이 지난 토큰으로 API 요청이 들어간다면, 요청을 중 새로운 토큰을 발급받아 요청하고 저장합니다.
     - 405 error(리프레시 토큰 만료)가 떨어지는 경우 로그아웃 처리합니다.
-    ![Untitled](https://file.notion.so/f/s/2d6578c9-44b0-4e8b-b0c4-e8b21f0b8167/ezgif.com-crop_(8).gif?id=12f781ef-a9a5-4964-89f6-a9033bff759c&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691762400000&signature=WA8K948QzhBFPsc1TpWSakfPbkB63mD0HBidQwbpt4Y&downloadName=ezgif.com-crop+%288%29.gif)
+    ![ezgif](https://github.com/JHni2/collect-webtoons/assets/105628384/fcf24f87-b371-4509-a147-b2170f611bed)

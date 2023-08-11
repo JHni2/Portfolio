@@ -10,7 +10,9 @@ export default function SkillSetPage() {
           <p className="font-bold text-2xl mb-5">FE</p>
           <ul>
             {FEList.map((item) => (
-              <li className="text-lg text-pointGrey leading-8">{item}</li>
+              <li key={item} className="text-lg text-pointGrey leading-8">
+                {item}
+              </li>
             ))}
           </ul>
         </div>
@@ -18,7 +20,9 @@ export default function SkillSetPage() {
           <p className="font-bold text-2xl mb-5">Tools</p>
           <ul className="h-[82%] flex flex-col justify-center">
             {ToolList.map((item) => (
-              <li className="text-lg text-pointGrey leading-8">{item}</li>
+              <li key={item} className="text-lg text-pointGrey leading-8">
+                {item}
+              </li>
             ))}
           </ul>
         </div>

@@ -1,6 +1,6 @@
 ## Overview
 
-![프로젝트 이미지](https://file.notion.so/f/s/407e559d-25bf-43dd-9da7-c5b1653057e6/ogImg.png?id=568d6cb4-7219-4fe7-b49b-1ae1d2b8d1d5&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691748000000&signature=-mXoIg9LDwHsaMUAwe3HbxoQqr_pMqAm_QgYzxvi4k8&downloadName=ogImg.png)
+![프로젝트 이미지](https://github.com/JHni2/collect-webtoons/assets/105628384/1696d2c7-5ef7-4476-820b-f9714c762766)
 
 - **프로젝트명: 웹툰 모아봐요**
 - **프로젝트 기간: 2023년 2월 20일 ~ 3월 17일**
@@ -36,36 +36,36 @@ React, Vite, Typescript, Recoil, Tailwind CSS, Firebase
 1. **웹툰 모아보기**
     - 요일, 장르, 플랫폼별 필터링
         
-    ![Untitled](https://file.notion.so/f/s/089cdebb-6831-4cf1-a08c-a4a1fc1343f6/Untitled.png?id=659a51d3-6451-4845-9165-80434b82fe26&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691762400000&signature=ydhD41JhYXbJ_kHDWpuAyxlx-Og0tEZ2CzN0cBZLhCk&downloadName=Untitled.png)
+    ![Untitled](https://github.com/JHni2/collect-webtoons/assets/105628384/19c4214f-a5b5-4424-b2fd-5e30d0575c2c)
         
 
 2.  **제목 / 작가로 검색하기**
     - 검색 키워드 자동 완성 및 검색
 
-![Untitled](https://file.notion.so/f/s/9e1bea1b-64c3-4019-9506-9a33532ebd84/Untitled.png?id=18ac14ef-f0a9-48c2-bf1e-fc2f4f7e055a&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691762400000&signature=R7B2p61Kh9aUELp1Qpz0xcn415Ftkl-dKzGdbFmg4KE&downloadName=Untitled.png)
+![Untitled](https://github.com/JHni2/collect-webtoons/assets/105628384/c6eff97a-7ec3-48b6-a067-52ae96c0b364)
 
-![Untitled](https://file.notion.so/f/s/ea7fc9c9-ee53-4beb-90ab-e89eeeab0092/Untitled.png?id=89639c8d-5ef7-45a2-bf5b-4801f0bb973b&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691762400000&signature=vNX-YSD0ETK1NtCT-d23Tm8SElI5i_9iWJVDUNjEWwo&downloadName=Untitled.png)
+![Untitled](https://github.com/JHni2/collect-webtoons/assets/105628384/50a90e15-7235-4acb-a3fa-e74a17621f00)
 
 
 3. **웹툰 상세 페이지**
     - 관심 웹툰 설정
 
-![Untitled](https://file.notion.so/f/s/4d68b83e-850d-4b31-b999-b8f6ccbc9662/Untitled.png?id=02901fbf-bf41-40b9-a8aa-4c1fa13056c5&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691762400000&signature=4odcUX4gqrdRMnfciXAceaRNOlUN-9AmXB_DGURD8ZU&downloadName=Untitled.png)
+![Untitled](https://github.com/JHni2/collect-webtoons/assets/105628384/ad62af85-3439-44f9-8ea9-23ff8f768d3f)
 
 
 4. **마이 페이지**
     - 관심 웹툰 확인
     - 관심 웹툰과 같은 장르의 추천 웹툰
 
-![Untitled](https://file.notion.so/f/s/aa67d428-7f95-43a4-bd50-2cf2430244cd/Untitled.png?id=ccfba658-dbc2-42a0-bb9a-b9e05a29fbce&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691762400000&signature=pIUviEj3E_gDiwMWTcwv3wJ-QJWMmhYiBlY2f4Wswu0&downloadName=Untitled.png)
+![Untitled](https://github.com/JHni2/collect-webtoons/assets/105628384/580f53a7-9650-461d-a15a-49e98a4fa988)
 
 
 5. **회원가입 및 로그인**
     - 이메일 로그인, 소셜 로그인(구글)
 
-![Untitled](https://file.notion.so/f/s/17e5db61-06e7-4fe3-ac54-921214adc2d9/Untitled.png?id=0a4fa58a-0dc5-48e7-b04c-a083288e97da&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691762400000&signature=ZihkxG9pVoIhM7mjMjFOGuJboapCaZ0D2wgtGhLL8oc&downloadName=Untitled.png)
+![Untitled](https://github.com/JHni2/collect-webtoons/assets/105628384/c642172c-afd2-4073-b40a-9eaa62b45d72)
 
-![Untitled](https://file.notion.so/f/s/71886c3c-c27d-4859-83e7-0192956f3c9a/Untitled.png?id=54b64709-2bbe-4f15-8289-fea6eeab2a48&table=block&spaceId=1785e024-9056-47a4-86a6-cabed72497fe&expirationTimestamp=1691762400000&signature=_r0RKjUumuLp_z_VsvYbdJdiyAuT46wP1NsRoSQZybM&downloadName=Untitled.png)
+![Untitled](https://github.com/JHni2/collect-webtoons/assets/105628384/40409953-2125-4aa3-ada3-63dbb84b91dd)
 
 ## 기술 특장점
 
