@@ -5,6 +5,7 @@ import EducationPage from './components/Education';
 import SkillSetPage from './components/SkillSet';
 import ProjectPage from './components/Project';
 import ProfilePage from './components/ProfilePage';
+import CommentPage from './components/Comment';
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
         {/* @ts-expect-error Async Server Component */}
         <ProjectPage />
         <ProfilePage content="Contact" />
+        <CommentPage />
       </div>
     </div>
   );
