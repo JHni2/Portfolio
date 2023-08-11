@@ -17,7 +17,7 @@ export default function Home() {
         <ProfilePage content="About" />
         <SkillSetPage />
         <EducationPage />
-        {/* @ts-expect-error Async Server Component */}
+        {/* @ts-ignore Async Server Component */}
         <ProjectPage />
         <ProfilePage content="Contact" />
         <CommentPage />
