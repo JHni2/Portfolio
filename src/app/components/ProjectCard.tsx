@@ -14,7 +14,7 @@ export default function ProjectCard({ post: { title, description, date, path } }
           <time>{date.toString()}</time>
         </div>
         <div className="relative w-[400px] h-[200px] overflow-hidden">
-          <Image src={`/images/${path}.png`} alt={title} fill className="rounded-3xl" />
+          <Image src={`/images/${path}.png`} alt={title} fill sizes="340px" className="rounded-3xl" />
         </div>
       </div>
     </Link>

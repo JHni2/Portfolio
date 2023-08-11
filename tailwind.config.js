@@ -3,6 +3,8 @@ module.exports = {
   content: ['./src/pages/**/*.{js,ts,jsx,tsx,mdx}', './src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     colors: {
+      transparent: 'transparent',
+      white: 'white',
       grey: '#F9F9F9',
       orange: '#FFBF85',
       pointGrey: '#8b8b8b',
