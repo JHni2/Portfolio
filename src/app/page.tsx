@@ -1,11 +1,11 @@
-import Header from './components/Header';
-import Nav from './components/Nav';
-import HomePage from './components/Home';
-import EducationPage from './components/Education';
-import SkillSetPage from './components/SkillSet';
-import ProjectPage from './components/Project';
-import ProfilePage from './components/ProfilePage';
-import CommentPage from './components/Comment';
+import EducationPage from '@/components/Education';
+import Header from '@/components/Header';
+import HomePage from '@/components/Home';
+import Nav from '@/components/Nav';
+import ProfilePage from '@/components/ProfilePage';
+import ProjectPage from '@/components/Project';
+import SkillSetPage from '@/components/SkillSet';
+import CommentPage from '../components/Comment';
 
 export default function Home() {
   return (

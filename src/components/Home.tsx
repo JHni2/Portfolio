@@ -1,4 +1,4 @@
-import ArrowDown from './ui/icons/ArrowDownIcon';
+import ArrowDownIcon from './ui/icons/ArrowDownIcon';
 
 export default function HomePage() {
   return (
@@ -11,7 +11,7 @@ export default function HomePage() {
         <span>입니다.</span>
       </h3>
       <div className="animate-bounce absolute bottom-[30px] cursor-pointer">
-        <ArrowDown />
+        <ArrowDownIcon />
       </div>
     </div>
   );

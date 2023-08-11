@@ -1,4 +1,4 @@
-import ProjectContent from '@/app/components/ProjectContent';
+import ProjectContent from '@/components/ProjectContent';
 import { getProjectData } from '@/service/projects';
 
 type Props = {

@@ -38,13 +38,13 @@ export default function CommentInput() {
   };
 
   return (
-    <section className="flex gap-4">
-      <div className="relative flex justify-center items-center bg-grey rounded-full min-w-[60px] min-h-[60px] shadow-md">
+    <section className="flex gap-4 max-h-[64px]">
+      <div className="relative flex justify-center items-center bg-grey rounded-full h-[60px] min-w-[60px] max-w-[60px] shadow-md">
         <p className="absolute text-2xl cursor-pointer" onClick={() => setOpenModal(!openModal)}>
           {emoji}
         </p>
         {openModal && (
-          <div className="relative w-full top-[17rem]">
+          <div className="relative w-full top-[17rem] z-10">
             <EmojiPicker skinTonesDisabled={true} lazyLoadEmojis onEmojiClick={(e) => onEmojiClick(e.emoji)} />
           </div>
         )}
