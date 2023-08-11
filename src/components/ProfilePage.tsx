@@ -1,3 +1,5 @@
+'use client';
+
 import Image from 'next/image';
 import Link from 'next/link';
 import profileImage from 'public/images/profile.png';
@@ -7,8 +9,12 @@ type Props = { content: string };
 export default function ProfilePage({ content }: Props) {
   return (
     <>
-      {content === 'Contact' && <h2 className="text-4xl font-bold my-4 text-center">Contact</h2>}
-      <section className={`flex gap-10 items-center p-9 rounded-3xl ${content === 'About' ? 'bg-grey' : 'bg-[#FAF8C8]'}`}>
+      {content === 'Contact' && (
+        <h2 id="Contact" className="text-4xl font-bold my-4 text-center">
+          Contact
+        </h2>
+      )}
+      <section id="About" className={`flex gap-10 items-center p-9 rounded-3xl ${content === 'About' ? 'bg-grey' : 'bg-[#FAF8C8]'}`}>
         <div className="w-[160px] h-[160px] rounded-full overflow-hidden border-4 border-orange">
           <Image src={profileImage} alt="profileImage" priority />
         </div>

@@ -1,6 +1,7 @@
 import './globals.css';
 import { Outfit } from 'next/font/google';
 import SWRConfigContext from '@/context/SWRConfigContext';
+import Recoil from '@/components/Recoil';
 
 const outfit = Outfit({ subsets: ['latin'] });
 
@@ -14,7 +15,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={outfit.className}>
       <body className="w-full max-w-screen-xl overflow-auto mx-auto">
         <main>
-          <SWRConfigContext>{children}</SWRConfigContext>
+          <Recoil>
+            <SWRConfigContext>{children}</SWRConfigContext>
+          </Recoil>
         </main>
         <div id="portal" />
       </body>

@@ -1,3 +1,7 @@
+'use client';
+
+import { handleScroll } from '@/app/util/scroll';
+import Link from 'next/link';
 import { MdKeyboardArrowDown } from 'react-icons/md';
 
 type Props = {
@@ -5,5 +9,9 @@ type Props = {
 };
 
 export default function ArrowDownIcon({ size = 50 }: Props) {
-  return <MdKeyboardArrowDown size={size} className="cursor-pointer" />;
+  return (
+    <Link href="#About" onClick={handleScroll}>
+      <MdKeyboardArrowDown size={size} className="cursor-pointer" />
+    </Link>
+  );
 }

@@ -6,7 +6,7 @@ export default async function ProjectPage() {
   const projects = await getAllProjects();
 
   return (
-    <section className="relative my-4 z-0">
+    <section id="Project" className="relative my-4 z-0">
       <h2 className="text-4xl font-bold my-4 text-center">Project</h2>
       <MultiCarousel>
         {projects.map((project) => (
