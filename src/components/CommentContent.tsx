@@ -5,9 +5,7 @@ import useSWR from 'swr';
 import ArrowDownIcon from './ui/icons/ArrowDownIcon';
 
 export default function CommentContent() {
-  const { data: comments, isLoading, error } = useSWR('/api/comments');
-
-  console.log(comments);
+  const { data: comments, isLoading } = useSWR('/api/comments');
 
   return (
     <section className="bg-grey rounded-3xl min-h-[400px] my-4 p-6 shadow-md">

@@ -14,4 +14,11 @@ export default {
       type: 'string',
     },
   ],
+
+  preview: {
+    select: {
+      title: 'emoji',
+      subtitle: 'content',
+    },
+  },
 }
