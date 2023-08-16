@@ -1,18 +1,18 @@
-# 인스타그램 클론 코딩
+## 인스타그램 클론 코딩
 
 NextJS를 이용하여 사진이 첨부된 게시글을 작성할 수 있어요.
 
 실시간으로 좋아요, 북마크, 댓글 등을 남길 수 있는 커뮤니티를 구현했어요.
 
-## 배포 링크
+### 배포 링크
 
 [Instagram-clone](https://instagram-clone-jhni2.vercel.app/)
 
-## 기술 스택
+### 기술 스택
 
 React, NextJS, Typescript, Sanity
 
-## 프로젝트 주요 기능
+### 프로젝트 주요 기능
 
 1.  **Google 로그인**
     - Google 계정으로 로그인할 수 있어요.

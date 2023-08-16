@@ -14,7 +14,7 @@ export default function ProfilePage({ content }: Props) {
           Contact
         </h2>
       )}
-      <section id="About" className={`flex gap-10 items-center p-9 rounded-3xl ${content === 'About' ? 'bg-grey' : 'bg-[#FAF8C8]'}`}>
+      <section id="About" className={`flex gap-10 items-center p-9 rounded-3xl ${content === 'About' ? 'bg-grey dark:bg-navy' : 'bg-pointYellow dark:bg-pointGreen'}`}>
         <div className="w-[160px] h-[160px] rounded-full overflow-hidden border-4 border-orange">
           <Image src={profileImage} alt="profileImage" priority />
         </div>

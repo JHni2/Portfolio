@@ -1,9 +1,10 @@
 'use client';
 
 import { ChangeEvent, useEffect, useState } from 'react';
-import EmojiPicker from 'emoji-picker-react';
+import EmojiPicker, { Theme } from 'emoji-picker-react';
 import useSWR from 'swr';
 import { MoonLoader } from 'react-spinners';
+import { useTheme } from 'next-themes';
 
 type Form = {
   emoji: string;
@@ -21,6 +22,8 @@ export default function CommentInput() {
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>();
   const [hasmounted, sethasmounted] = useState(false);
+  const disabled = comment.content === '';
+  const { theme } = useTheme();
 
   const { mutate } = useSWR('/api/comments');
 
@@ -40,6 +43,12 @@ export default function CommentInput() {
   const onEmojiClick = (e: string) => {
     setComment((prev) => ({ ...prev, emoji: e }));
     setOpenModal(false);
+  };
+
+  const onKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      onClickButton();
+    }
   };
 
   const onClickButton = () => {
@@ -66,24 +75,24 @@ export default function CommentInput() {
 
   return (
     <section className="flex gap-4 max-h-[64px]">
-      <div className="relative flex justify-center items-center bg-grey rounded-full h-[60px] min-w-[60px] max-w-[60px] shadow-md">
+      <div className="relative flex justify-center items-center bg-grey dark:bg-navy rounded-full h-[60px] min-w-[60px] max-w-[60px] shadow-md">
         <p className="absolute text-2xl cursor-pointer" onClick={() => setOpenModal(!openModal)}>
           {comment.emoji}
         </p>
         {openModal && (
           <div className="relative w-full top-[17rem] z-10">
-            <EmojiPicker skinTonesDisabled={true} lazyLoadEmojis onEmojiClick={(e) => onEmojiClick(e.emoji)} />
+            <EmojiPicker theme={theme === 'light' ? Theme.LIGHT : Theme.DARK} skinTonesDisabled={true} lazyLoadEmojis onEmojiClick={(e) => onEmojiClick(e.emoji)} />
           </div>
         )}
       </div>
-      <div className="flex justify-between items-center gap-6 pr-6 bg-grey rounded-3xl shadow-md w-full">
-        <input disabled={loading} className="w-full ml-5 !bg-transparent outline-none" type="text" id="comment" name="comment" placeholder="댓글을 입력해주세요." value={comment.content} required onChange={onChange} />
+      <div className="flex justify-between items-center gap-6 pr-6 bg-grey dark:bg-navy rounded-3xl shadow-md w-full">
+        <input onKeyPress={(e) => onKeyPress(e)} disabled={loading} className="w-full ml-5 !bg-transparent outline-none" type="text" id="comment" name="comment" placeholder="댓글을 입력해주세요." value={comment.content} required onChange={onChange} />
         {loading ? (
           <MoonLoader size={30} speedMultiplier={0.5} />
         ) : (
-          <div onClick={() => onClickButton()} className="flex items-center justify-center px-4 py-2 bg-pointGrey/40 text-white rounded-3xl font-semibold cursor-pointer">
+          <button disabled={disabled} onClick={() => onClickButton()} className={'flex items-center justify-center px-4 py-2 bg-pointGrey/40 text-white rounded-3xl font-semibold ' + (disabled ? '' : 'cursor-pointer')}>
             입력
-          </div>
+          </button>
         )}
       </div>
     </section>

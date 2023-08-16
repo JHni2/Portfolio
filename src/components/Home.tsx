@@ -31,13 +31,15 @@ export default function HomePage() {
 
     return () => {
       if (componentRef.current) {
+        // eslint-disable-next-line react-hooks/exhaustive-deps
         observer.unobserve(componentRef.current);
       }
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
-    <div ref={componentRef} id="Home" className="h-screen flex items-center justify-center relative z-[1] bg-grey">
+    <div ref={componentRef} id="Home" className="h-screen flex items-center justify-center relative z-[1] bg-grey dark:bg-navy">
       <h3 className="text-4xl text-center font-bold leading-[3.5rem]">
         안녕하세요!
         <br />
