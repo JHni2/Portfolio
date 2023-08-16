@@ -8,7 +8,7 @@ export default function CommentContent() {
   const { data: comments, isLoading } = useSWR('/api/comments');
 
   return (
-    <section className="bg-grey rounded-3xl min-h-[400px] my-4 p-6 shadow-md">
+    <section className="bg-grey dark:bg-navy rounded-3xl min-h-[400px] my-4 p-6 shadow-md">
       <div className="flex justify-between">
         <h2 className="text-2xl font-semibold opacity-60 mb-6">Comments</h2>
         <ArrowDownIcon size={30} />

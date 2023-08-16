@@ -66,7 +66,7 @@ export default function CommentInput() {
 
   return (
     <section className="flex gap-4 max-h-[64px]">
-      <div className="relative flex justify-center items-center bg-grey rounded-full h-[60px] min-w-[60px] max-w-[60px] shadow-md">
+      <div className="relative flex justify-center items-center bg-grey dark:bg-navy rounded-full h-[60px] min-w-[60px] max-w-[60px] shadow-md">
         <p className="absolute text-2xl cursor-pointer" onClick={() => setOpenModal(!openModal)}>
           {comment.emoji}
         </p>
@@ -76,7 +76,7 @@ export default function CommentInput() {
           </div>
         )}
       </div>
-      <div className="flex justify-between items-center gap-6 pr-6 bg-grey rounded-3xl shadow-md w-full">
+      <div className="flex justify-between items-center gap-6 pr-6 bg-grey dark:bg-navy rounded-3xl shadow-md w-full">
         <input disabled={loading} className="w-full ml-5 !bg-transparent outline-none" type="text" id="comment" name="comment" placeholder="댓글을 입력해주세요." value={comment.content} required onChange={onChange} />
         {loading ? (
           <MoonLoader size={30} speedMultiplier={0.5} />

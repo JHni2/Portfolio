@@ -11,7 +11,7 @@ export default function Nav() {
   return (
     <>
       {showNav === 'up' && (
-        <div className=" w-full sticky inset-0 my-0 mx-auto py-4 z-50 bg-white">
+        <div className=" w-full sticky inset-0 my-0 mx-auto py-4 z-50 bg-white dark:bg-darkNavy">
           <ul className="text-center flex justify-evenly">
             {categories.map((cateogory) => (
               <li className="cursor-pointer text-lg font-semibold" key={cateogory}>
