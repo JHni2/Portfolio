@@ -14,7 +14,7 @@ export default function ThemeMode() {
   }, []);
 
   return (
-    <div onClick={() => (theme === 'dark' ? setTheme('light') : setTheme('dark'))} className="flex text-xl cursor-pointer relative w-[20px] h-[20px] mr-4">
+    <div onClick={() => (theme === 'dark' ? setTheme('light') : setTheme('dark'))} className="flex text-lg md:text-xl cursor-pointer relative w-[20px] h-[20px] mr-4">
       {mounted && (
         <div>
           <div className={'absolute transition ease-[cubic-bezier(0.18, 0.89, 0.32, 1.28)] duration-500 ' + (theme === 'light' ? 'opacity-100' : 'opacity-0')}>

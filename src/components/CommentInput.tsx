@@ -74,27 +74,35 @@ export default function CommentInput() {
   };
 
   return (
-    <section className="flex gap-4 max-h-[64px]">
-      <div className="relative flex justify-center items-center bg-grey dark:bg-navy rounded-full h-[60px] min-w-[60px] max-w-[60px] shadow-md">
-        <p className="absolute text-2xl cursor-pointer" onClick={() => setOpenModal(!openModal)}>
-          {comment.emoji}
-        </p>
-        {openModal && (
-          <div className="relative w-full top-[17rem] z-10">
-            <EmojiPicker theme={theme === 'light' ? Theme.LIGHT : Theme.DARK} skinTonesDisabled={true} lazyLoadEmojis onEmojiClick={(e) => onEmojiClick(e.emoji)} />
-          </div>
-        )}
-      </div>
-      <div className="flex justify-between items-center gap-6 pr-6 bg-grey dark:bg-navy rounded-3xl shadow-md w-full">
-        <input onKeyPress={(e) => onKeyPress(e)} disabled={loading} className="w-full ml-5 !bg-transparent outline-none" type="text" id="comment" name="comment" placeholder="댓글을 입력해주세요." value={comment.content} required onChange={onChange} />
-        {loading ? (
-          <MoonLoader size={30} speedMultiplier={0.5} />
-        ) : (
-          <button disabled={disabled} onClick={() => onClickButton()} className={'flex items-center justify-center px-4 py-2 bg-pointGrey/40 text-white rounded-3xl font-semibold ' + (disabled ? '' : 'cursor-pointer')}>
-            입력
-          </button>
-        )}
-      </div>
-    </section>
+    <>
+      <section className="flex gap-4 max-h-[64px]">
+        <div className="relative flex justify-center items-center bg-grey dark:bg-navy rounded-full h-[60px] min-w-[60px] max-w-[60px] shadow-md">
+          <p className="absolute text-2xl cursor-pointer" onClick={() => setOpenModal(!openModal)}>
+            {comment.emoji}
+          </p>
+          {openModal && (
+            <div className="relative w-full top-[17rem] z-10">
+              <EmojiPicker theme={theme === 'light' ? Theme.LIGHT : Theme.DARK} skinTonesDisabled={true} lazyLoadEmojis onEmojiClick={(e) => onEmojiClick(e.emoji)} />
+            </div>
+          )}
+        </div>
+        <div className="flex justify-between items-center gap-6 pr-6 bg-grey dark:bg-navy rounded-3xl shadow-md w-full">
+          <input onKeyPress={(e) => onKeyPress(e)} disabled={loading} className="w-full ml-5 !bg-transparent outline-none truncate" type="text" id="comment" name="comment" placeholder="댓글을 입력해주세요." value={comment.content} required onChange={onChange} />
+          {loading ? (
+            <MoonLoader size={30} speedMultiplier={0.5} />
+          ) : (
+            <button disabled={disabled} onClick={() => onClickButton()} className={'flex items-center justify-center px-4 py-2 bg-pointGrey/40 text-white rounded-3xl font-semibold ' + (disabled ? '' : 'cursor-pointer')}>
+              입력
+            </button>
+          )}
+        </div>
+      </section>
+      {error && (
+        <div className="flex flex-col gap-2 items-center p-4 rounded-3xl bg-orange/50">
+          <p>댓글 입력에 실패했습니다.</p>
+          <p>{error}app-index.js:32 Warning: Prop `className` did not match. Server: _className_a14fc5 light Client: _className_a14fc5</p>
+        </div>
+      )}
+    </>
   );
 }

@@ -3,6 +3,11 @@ module.exports = {
   content: ['./src/pages/**/*.{js,ts,jsx,tsx,mdx}', './src/components/**/*.{js,ts,jsx,tsx,mdx}', './src/app/**/*.{js,ts,jsx,tsx,mdx}'],
   darkMode: 'class',
   theme: {
+    screens: {
+      sm: '426px',
+      md: '768px',
+      lg: '1025px',
+    },
     colors: {
       transparent: 'transparent',
       white: 'white',
