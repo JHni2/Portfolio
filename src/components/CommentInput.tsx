@@ -86,7 +86,7 @@ export default function CommentInput() {
         )}
       </div>
       <div className="flex justify-between items-center gap-6 pr-6 bg-grey dark:bg-navy rounded-3xl shadow-md w-full">
-        <input onKeyPress={(e) => onKeyPress(e)} disabled={loading} className="w-full ml-5 !bg-transparent outline-none" type="text" id="comment" name="comment" placeholder="댓글을 입력해주세요." value={comment.content} required onChange={onChange} />
+        <input onKeyPress={(e) => onKeyPress(e)} disabled={loading} className="w-full ml-5 !bg-transparent outline-none truncate" type="text" id="comment" name="comment" placeholder="댓글을 입력해주세요." value={comment.content} required onChange={onChange} />
         {loading ? (
           <MoonLoader size={30} speedMultiplier={0.5} />
         ) : (
