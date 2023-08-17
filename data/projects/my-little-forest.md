@@ -85,6 +85,7 @@ https://youtu.be/C5DPI5JN3uM
 ### 📋 ERD
 ![ERD](https://github.com/JHni2/Portfolio/assets/105628384/acab7c66-b14d-4055-a70d-94dcce520a26)
 
+
 ### 🔗 주요 기능
 
 1.  **검색 및 필터링**
@@ -94,6 +95,7 @@ https://youtu.be/C5DPI5JN3uM
     - 최신순, 인기순, 내림차순, 오름차순으로 정렬이 가능하도록 했습니다.
     ![검색 및 필터링](https://github.com/JHni2/Portfolio/assets/105628384/afb2c6f2-0c87-4a04-9824-f06492436716)
 
+
 1.  **뉴스**
     - useInfinityQuery와 react-intersection-observer를 활용한 무한스크롤
     옵저버를 활용해, 뷰포트 안에 옵저버가 보여지는 시점에 다음페이지를 불러오도록 했습니다.
@@ -101,6 +103,7 @@ https://youtu.be/C5DPI5JN3uM
     - 사용자 편의성을 위해 약 한페이지 정도 이상의 스크롤이 발생하면, 정해진 Yscroll값에 따라 scroll to top 버튼이 생기도록 구현했습니다.
     뉴스 상세보기페이지에서도 스크롤 이벤트를 감지해 전체 내용을 볼 수 있도록 디자인했습니다.
     ![뉴스](https://github.com/JHni2/Portfolio/assets/105628384/ff7defde-affa-4dde-829a-3ba19d7c6d1e)
+
 
 1.  **커뮤니티**
     - 파일 업로드를 구현할 때, 폼을 통해서 파일을 등록해서 전송합니다.
@@ -125,11 +128,13 @@ https://youtu.be/C5DPI5JN3uM
     - 현재 채팅방의 참여중인 유저의 수와 그 리스트가 실시간으로 반영되는 것을 조회할 수 있습니다. 
     ![실시간 채팅](https://github.com/JHni2/Portfolio/assets/105628384/5e161cc6-aa5d-46dd-ae7a-e65641595c27)
 
+
 1.  **이미지 업로드**
     - 유저가 업로드한 이미지를 미리보기로 확인할 수 있게 코드를 구현하였습니다.
     뷰포트의 크기를 계산해 Yscroll 값을 활용하는 방법도 있었지만, 더 효율적이고 안정적인 방법인 observer를 활용했습니다.
     - 서버의 부하를 최대한 줄이기 위해, Browser Image Compression를 사용해 이미지 용량과 사이즈가 너무 과도하게 크지 않도록 최적화해서 서버로 이미지를 업로드하였습니다. 
     ![이미지 업로드](https://github.com/JHni2/Portfolio/assets/105628384/6a2198bc-1548-4cb8-8e7c-fcc76f00ddea)
+
 
 1.  **실시간 알림**
     - FCM 서버로부터 푸시 알림을 보낼 디바이스들을 식별하기 위한 FCM 토큰을 발급 받습니다.
@@ -138,9 +143,11 @@ https://youtu.be/C5DPI5JN3uM
     ![실시간 알림](https://github.com/JHni2/Portfolio/assets/105628384/77a19b3d-3b2e-4da1-8e1b-95e982cce0d4)
     ![알림 관리](https://github.com/JHni2/Portfolio/assets/105628384/538c6a77-3157-4f06-aad6-85535e170e3f)
 
+
 1.  **JWT를 이요한 사용자 인증**
     - JWT는 개인 정보이므로 보안을 위해 recoil atom에 access token을 저장 및 관리했습니다.
     - store는 페이지가 새로고침되면 휘발되는 정보이므로 recoil Effects를 사용해 전역관리가 필요한 사용자의 데이터를 스토리지에 저장해 관리했습니다. 이를 통해 사용자 경험에 영향을 주지 않고 토큰 만료 및 재발급 과정을 처리할 수 있습니다.
     - axios interceptors를 이용해 모든 API 요청으로부터 토큰의 만료시간의 경과 여부를 검사하고, 만료시간이 지난 토큰으로 API 요청이 들어간다면, 요청을 중 새로운 토큰을 발급받아 요청하고 저장합니다.
     - 405 error(리프레시 토큰 만료)가 떨어지는 경우 로그아웃 처리합니다.
     ![로그아웃](https://github.com/JHni2/Portfolio/assets/105628384/0815bec8-55b4-47a5-b0f5-327f37943902)
+

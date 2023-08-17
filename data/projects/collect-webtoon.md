@@ -1,5 +1,6 @@
 ## Overview
 
+
 ![overview](https://github.com/JHni2/Portfolio/assets/105628384/50432707-d9ab-4d7d-9e03-17175cdf228a)
 
 - **프로젝트명: 웹툰 모아봐요**
@@ -37,6 +38,7 @@ React, Vite, Typescript, Recoil, Tailwind CSS, Firebase
     - 요일, 장르, 플랫폼별 필터링
         
     ![메인 화면](https://github.com/JHni2/Portfolio/assets/105628384/8698bc25-ddd8-4c86-97c0-725cf690c402)
+
         
 
 2.  **제목 / 작가로 검색하기**
@@ -53,11 +55,13 @@ React, Vite, Typescript, Recoil, Tailwind CSS, Firebase
 ![웹툰 상세 페이지](https://github.com/JHni2/Portfolio/assets/105628384/47d66991-1c49-43b8-9bff-2ea377187893)
 
 
+
 4. **마이 페이지**
     - 관심 웹툰 확인
     - 관심 웹툰과 같은 장르의 추천 웹툰
 
 ![마이페이지](https://github.com/JHni2/Portfolio/assets/105628384/873f757d-6569-45a2-8e56-733ca9162761)
+
 
 
 5. **회원가입 및 로그인**
@@ -66,6 +70,7 @@ React, Vite, Typescript, Recoil, Tailwind CSS, Firebase
 ![로그인 화면](https://github.com/JHni2/Portfolio/assets/105628384/8a78a8db-411e-4f49-8427-b6c99b67d26e)
 
 ![회원가입 화면](https://github.com/JHni2/Portfolio/assets/105628384/6002114a-4863-4a1f-9b4b-628caac7c57a)
+
 
 ## 기술 특장점
 
