@@ -16,7 +16,7 @@ React, NextJS, Typescript, Sanity
 
 1.  **Google 로그인**
     - Google 계정으로 로그인할 수 있어요.
-        ![Untitled](https://user-images.githubusercontent.com/105628384/258736854-b8bfb3b6-29f9-4d3e-8400-b59f17d6747d.png)
+        ![overview](https://user-images.githubusercontent.com/105628384/258736854-b8bfb3b6-29f9-4d3e-8400-b59f17d6747d.png)
 
 1.  **커뮤니티**
     - 사진과 글을 포함한 게시글을 작성할 수 있어요.
@@ -24,7 +24,7 @@ React, NextJS, Typescript, Sanity
     - 다른 사용자를 팔로우, 언팔로우 할 수 있어요.
     ![Untitled](https://user-images.githubusercontent.com/105628384/258737153-51756b27-2fad-4342-b82d-2ee458858cc6.png)
     ![Untitled](https://user-images.githubusercontent.com/105628384/258737598-bd8bf2c0-07b4-4163-b708-e12d43876d35.png)
-    ![Untitled](https://user-images.githubusercontent.com/105628384/258739317-c5e737eb-f629-4bfc-aee3-d76a14139201.gif)
+    ![Untitled](https://github.com/BuD2023/BuDFrontend/assets/105628384/1f245ec9-77cd-460f-b179-579f24741f7d)
     ![Untitled](https://user-images.githubusercontent.com/105628384/258739313-4a838ac5-8aaa-4064-a639-f46954776e2b.gif)
 
 1.  **마이 페이지**

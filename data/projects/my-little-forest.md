@@ -27,7 +27,7 @@ https://youtu.be/C5DPI5JN3uM
 ## Project
 
 ### ⚙ 프로젝트 아키텍쳐
-![아키텍쳐](https://github.com/JHni2/Portfolio/assets/105628384/c36bf3f9-293b-47cd-acc2-fa03afd047f8)
+![overview](https://github.com/JHni2/Portfolio/assets/105628384/c36bf3f9-293b-47cd-acc2-fa03afd047f8)
 
 ### 🛠 기술 스택
 ### Frontend

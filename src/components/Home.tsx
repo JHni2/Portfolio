@@ -40,13 +40,13 @@ export default function HomePage() {
 
   return (
     <div ref={componentRef} id="Home" className="h-screen flex items-center justify-center relative z-[1] bg-grey dark:bg-navy">
-      <h3 className="text-3xl md:text-4xl text-center font-bold leading-[3rem] md:leading-[3.5rem]">
+      <strong className="text-3xl md:text-4xl text-center font-bold leading-[3rem] md:leading-[3.5rem]">
         안녕하세요!
         <br />
         <span>프론트엔드 개발자</span>
         <em className="not-italic text-orange"> 김지현</em>
         <span>입니다.</span>
-      </h3>
+      </strong>
       <div className="animate-bounce absolute bottom-[100px] cursor-pointer">
         <ArrowDownIcon />
       </div>
