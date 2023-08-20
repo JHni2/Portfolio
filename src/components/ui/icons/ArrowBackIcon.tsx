@@ -4,10 +4,18 @@ import { MdArrowBackIosNew } from 'react-icons/md';
 
 type Props = {
   size?: number;
+  className?: string;
+  goBack?: boolean;
 };
 
-export default function ArrowDownIcon({ size = 25 }: Props) {
+export default function ArrowBackIcon({ size = 25, className = '', goBack = false }: Props) {
   const router = useRouter();
 
-  return <MdArrowBackIosNew onClick={() => router.back()} size={size} className="cursor-pointer opacity-30" />;
+  const handleClick = () => {
+    if (goBack) {
+      router.back();
+    }
+  };
+
+  return <MdArrowBackIosNew onClick={handleClick} size={size} className={'cursor-pointer opacity-30 ' + className} />;
 }

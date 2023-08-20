@@ -1,6 +1,6 @@
 ## Overview
 
-![overview](https://github.com/JHni2/Portfolio/assets/105628384/807cde60-fbe1-4210-bb56-afe23350f1e5)
+![overview](https://github.com/BuD2023/BuDFrontend/assets/105628384/35f545ae-485d-49f1-a368-f273fb587779)
 
 
 - **프로젝트명: React Shop**
