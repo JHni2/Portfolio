@@ -1,6 +1,6 @@
 'use client';
 
-import { ChangeEvent, useEffect, useState } from 'react';
+import { ChangeEvent, useState } from 'react';
 import EmojiPicker, { Theme } from 'emoji-picker-react';
 import useSWR from 'swr';
 import { MoonLoader } from 'react-spinners';
@@ -21,19 +21,10 @@ export default function CommentInput() {
   const [openModal, setOpenModal] = useState<boolean>(false);
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<string>();
-  const [hasmounted, sethasmounted] = useState(false);
   const disabled = comment.content === '';
   const { theme } = useTheme();
 
   const { mutate } = useSWR('/api/comments');
-
-  useEffect(() => {
-    sethasmounted(true);
-  }, []);
-
-  if (!hasmounted) {
-    return null;
-  }
 
   const onChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { value } = e.target;
