@@ -7,8 +7,7 @@ import Providers from '../components/Provider';
 const outfit = Outfit({ subsets: ['latin'], display: 'swap' });
 
 export const metadata = {
-  name: 'naver-site-verification',
-  content: 'a89dc98c47cb64610b7f48537dd1de958b53394d',
+  other: { 'naver-site-verification': 'a89dc98c47cb64610b7f48537dd1de958b53394d' },
   title: '김지현의 포트폴리오',
   description: 'NextJS를 사용한 포트폴리오입니다.',
 };

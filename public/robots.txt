@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://jhni2-portfolio.vercel.app/
+
+# Sitemaps
+Sitemap: https://jhni2-portfolio.vercel.app/sitemap.xml
