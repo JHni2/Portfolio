@@ -2,7 +2,7 @@ import './globals.css';
 import { Outfit } from 'next/font/google';
 import SWRConfigContext from '@/context/SWRConfigContext';
 import Recoil from '@/components/Recoil';
-import Providers from '../components/Provider';
+import Providers from '@/components/Provider';
 
 const outfit = Outfit({ subsets: ['latin'], display: 'swap' });
 
