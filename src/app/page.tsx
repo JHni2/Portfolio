@@ -9,8 +9,8 @@ import CommentPage from '../components/Comment';
 
 export default function Home() {
   return (
-    <div className="min-w-[320px] min-h-full break-keep relative">
-      <div className="flex flex-col gap-4 relative w-full max-w-[1290px] h-full my-0 mx-auto px-9 ">
+    <div className="min-w-[320px] min-h-full break-keep relative px-9 ">
+      <div className="flex flex-col gap-4 relative w-full max-w-[1290px] h-full my-0 mx-auto">
         <Header />
         <HomePage />
         <Nav />
