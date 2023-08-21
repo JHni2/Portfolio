@@ -39,7 +39,7 @@ export default function HomePage() {
   }, []);
 
   return (
-    <div ref={componentRef} id="Home" className="h-screen flex items-center justify-center relative z-[1] bg-grey dark:bg-navy">
+    <div ref={componentRef} id="Home" className="relative h-[calc(100vh-63px)] flex items-center justify-center pb-6 z-[1] bg-gradient-to-b from-grey to-white dark:from-navy dark:to-darkNavy">
       <strong className="text-3xl md:text-4xl text-center font-bold leading-[3rem] md:leading-[3.5rem]">
         안녕하세요!
         <br />

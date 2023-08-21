@@ -12,10 +12,10 @@ export default function Header() {
   return (
     <>
       {showLogo && (
-        <div className="fixed inset-0 h-[58px] z-10 transition-all">
-          <div className="flex px-9 py-[15px] max-w-[1218px] mx-auto my-0 justify-between items-center">
-            <div className="flex gap-4 pl-4">
-              <Image src={Logo} alt="logo" width={28} height={28} />
+        <div className="absolute inset-0 h-[58px] z-50">
+          <div className="fixed max-w-[1280px] flex inset-0 h-[58px] mx-9 lg:mx-auto justify-between items-center backdrop-blur bg-white/30 dark:bg-darkNavy/10">
+            <div className="flex gap-4 pl-4 items-center">
+              <Image src={Logo} alt="logo" width={28} height={28} className="w-[auto]" />
               <h1 className="text-lg md:text-xl font-bold">즐겁게 작업하는 개발자</h1>
             </div>
             <ThemeMode />
