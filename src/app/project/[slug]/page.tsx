@@ -1,5 +1,5 @@
 import ProjectContent from '@/components/ProjectContent';
-import { getProjectData } from '@/service/projects';
+import { getAllProjects, getProjectData } from '@/service/projects';
 import { Metadata } from 'next';
 
 type Props = {
@@ -26,4 +26,12 @@ export async function generateMetadata({ params: { slug } }: Props): Promise<Met
     title: project?.title,
     description: project?.description,
   };
+}
+
+// 프로젝트 SSG로 동작하기
+export async function generateStaticParams() {
+  const posts = await getAllProjects();
+  return posts.map((post) => ({
+    slug: post.path,
+  }));
 }
